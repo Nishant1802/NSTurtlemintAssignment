@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="external_margin">10dp</dimen>
+    <dimen name="heading_txt_issues">24sp</dimen>
+    <dimen name="status_txt_size">14sp</dimen>
+    <dimen name="rv_top_margin">15dp</dimen>
+
+    <!-- Comment List Fragmnet -->
+    <dimen name="heading_txt_comment">20sp</dimen>
+
+    <!-- List Item -->
+    <dimen name="margin_top_list_item">10dp</dimen>
+    <dimen name="padding_top_list_item">5dp</dimen>
+    <dimen name="image_padding">5dp</dimen>
+    <dimen name="img_size">50dp</dimen>
+    <dimen name="username_txt_size">16sp</dimen>
+    <dimen name="item_margin_start">10dp</dimen>
+    <dimen name="item_margin_top">5dp</dimen>
+    <dimen name="title_txt_size">16sp</dimen>
+    <dimen name="desc_txt_size">14sp</dimen>
+    <dimen name="date_txt_size">14sp</dimen>
+
+</resources>

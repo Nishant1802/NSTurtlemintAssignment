@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NSTurtlemintAssignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dummy_desc">[![WhiteSource Renovate](https://app.renovatebot.com/images/banner.svg)](https://renovatebot.com)</string>
+    <string name="github_issues">Github Issues :-</string>
+    <string name="no_data_yet">No data yet</string>
+    <string name="no_comments_yet">No comments yet</string>
+
+
+</resources>

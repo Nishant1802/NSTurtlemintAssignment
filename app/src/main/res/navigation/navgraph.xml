@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/issuesListFragment">
+
+    <fragment
+        android:id="@+id/issuesListFragment"
+        android:name="com.nishant.nsturtlemintassignment.ui.IssuesListFragment.IssuesListFragment"
+        android:label="fragment_issues_list"
+        tools:layout="@layout/fragment_issues_list" >
+        <action
+            android:id="@+id/action_issuesListFragment_to_commentListFragment"
+            app:destination="@id/commentListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentListFragment"
+        android:name="com.nishant.nsturtlemintassignment.ui.CommentListFragment.CommentListFragment"
+        android:label="fragment_comment_list"
+        tools:layout="@layout/fragment_comment_list" >
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>

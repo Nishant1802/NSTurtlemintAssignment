@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/margin_top_list_item"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivUserImage"
+        android:src="@drawable/user_icon"
+        android:paddingStart="@dimen/image_padding"
+        android:paddingEnd="@dimen/image_padding"
+        android:layout_width="@dimen/img_size"
+        android:layout_height="@dimen/img_size"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_grey"
+        app:layout_constraintStart_toEndOf="@id/ivUserImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Nishant "
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="@dimen/username_txt_size"
+            android:layout_marginStart="@dimen/item_margin_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvUpdatedAt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="commented on 05-12-1996"
+            android:textColor="@color/white"
+            android:textSize="@dimen/username_txt_size"
+            android:alpha="0.6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvUsername"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="@string/dummy_desc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/desc_txt_size"
+        android:layout_marginTop="@dimen/item_margin_top"
+        android:layout_marginStart="@dimen/item_margin_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivUserImage"
+        app:layout_constraintTop_toBottomOf="@id/clHeading"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/tvComment"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
